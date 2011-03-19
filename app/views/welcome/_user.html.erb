@@ -1,0 +1,4 @@
+<div class="welcome_window">
+  <%= link_to image_tag("/images/chairs/#{user.id % 3}.png"), "/desktop/#{user.id}" %>
+  <p>Sit down at Desktop <%= submit_tag user.id %></p>
+</div>

@@ -1,0 +1,18 @@
+<div id="content_holder">
+  <% form_tag '/welcome/login' do %>
+	<center>
+    <div style="block; background-image: url('/images/nametag.png'); background-repeat: no-repeat; width: 300px; height: 202px;">
+	<h1 style="padding-top: 5px; font-weight: bold; font-size: 55px; letter-spacing: 1px; color:#FFF;">HELLO</h1>
+	<h2 style="margin-top: -10px; font-weight: bold; font-size: 18px; line-height: 25px; color:#FFF;">my name is</h2>
+	<%= text_field_tag :name, "", {:size => 20, :style => 'position: relative; top: 20px; height: 70px; font-size: 70px; width: 250px; border: none; text-align: center;' } %>
+	</div>
+	</center>
+	<br />
+	<br />
+	<img src="/images/welcome.png" /><br />
+    <br />
+	<div style="background-color: #bae2f0;">
+    <%= render :partial => 'user', :collection => @users %>
+	</div>
+  <% end %>
+</div>

@@ -1,0 +1,273 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #e9f4f8;
+  font: 100% Helvetica, Arial, sans-serif;
+  color: #333;
+  overflow: hidden;
+}
+
+img {
+	outline:0; 
+	border:0;
+}
+	
+#desktop {
+  width: 100%;
+  position: absolute;
+  top: 81px;
+  overflow: hidden;
+  /*
+  height: 100%;
+  min-height: 100%;
+  Set with Javascript.
+  */
+}
+
+.window {
+  position: absolute;
+  font-size: 0.8em;
+  cursor: pointer;
+  border: 3px dashed #fff;
+}
+
+.window .background {
+  background: #fff;
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+}
+
+.window:hover {
+  border-color: #bedfe9; 
+}
+
+.window:hover .background {
+  opacity: 0.8; 
+}
+
+.window .content {
+  padding: 1.0em;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.wind
+ow:hover {
+  background: #eee;
+}
+
+.welcome_window{
+	display: inline-block;
+	margin: 5px;
+	opacity: 0.8;
+}
+
+.welcome_window:hover {
+	opacity: 1;
+}
+.welcome_window input[type='submit'] {
+	font-weight: bold;
+}
+#everything{
+	background: url('/images/hack_header.png') repeat-x;
+  height: 100%;
+	min-height: 100%;
+}
+
+#welcome #everything {
+  background: transparent;
+  }
+
+#header_bar{
+	margin-top: 0px;
+	width: 100%;
+	height: 117px;
+	background: url('/images/hack_header_bg.png');
+	background-repeat: repeat-x;
+	text-align: center;
+	
+}
+#header_bar_image{
+	margin: auto;
+	margin-top: 0px;
+	width: 1278px;
+	height: 117px;
+	background: url('/images/hack_header.png');
+	background-repeat: no-repeat;
+	text-align: left;
+}
+
+.header_divider{
+	display: inline-block;
+	width: 2px;
+	height: 40px;
+	background: url('/images/header_divider.png') no-repeat;
+}
+
+#icons {
+	padding-top: 20px;
+	padding-left: 50px;
+}
+
+.icon_wrapper, .button_wrapper {
+	display: inline;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#content_holder{
+	margin:auto;
+	padding-top: 100px;
+	width: 900px;
+	height: 300px;
+	text-align: center;
+}
+
+/*Arrows*/
+#left{
+	float: left;
+	height: 32px;
+}
+
+#right{
+	float: right;
+	height: 32px;
+	
+}
+
+#left_arrow{
+	display: inline-block;
+	width: 49px;
+	height: 32px;
+	background: url('/images/left_arrow.png');
+	vertical-align: middle;
+}
+
+#right_arrow{
+	display: inline-block;
+	width: 49px;
+	height: 32px;
+	background: url('/images/right_arrow.png');
+	vertical-align: middle;
+}
+/*Tooltips*/
+
+#menu {
+	/* you must set it to relative, so that you can use absolute position for children elements */
+	position:relative; 
+	text-align:center; 
+	width:583px; 
+	height:40px;
+}
+
+#menu ul {
+	/* remove the list style and spaces*/
+	margin:0; 
+	padding:0; 
+	list-style:none; 
+	display:inline;
+			
+	/* position absolute so that z-index can be defined */
+	position:absolute; 
+	
+	/* center the menu, depend on the width of you menu*/
+	left:110px; 
+	top:0; 
+	
+}
+
+#menu ul li {
+	
+	/* give some spaces between the list items */
+	margin:0 5px; 
+	
+	/* display the list item in single row */
+	float:left;
+}
+
+#menu #box {
+	
+	/* position absolute so that z-index can be defined and able to move this item using javascript */
+	position:absolute; 
+	left:0; 
+	top:0; 
+	z-index:200; 
+
+	/* image of the right rounded corner */
+	background:url(/images/tail.png) no-repeat right center; 
+	height:35px;
+
+
+	/* add padding 8px so that the tail would appear */
+	padding-right:8px;
+	
+	/* set the box position manually */
+	margin-left:20px;
+	
+}
+
+#menu #box .head {
+	/* image of the left rounded corner */
+	background:url(/images/head.png) no-repeat 0 0;
+	height:35px;
+	color:#effaff;
+	
+	/* force text display in one line */
+	white-space:nowrap;
+
+	/* set the text position manually */
+	padding-left:8px;
+	padding-top:12px;
+}
+
+.browser {
+	height: 375px;
+	width: 500px;
+	padding-top: 50px;
+	background-color: #C5E5F0;
+	border: 1px solid #AAA;
+}
+.browserUrl {
+	margin-top: -50px;
+	display: block;
+	padding: 10px;
+	height: 30px;
+	background-color: #b0b0b0;
+}
+.browserUrl input[type="text"] {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	width: 100%;
+	height: 20px;
+}
+.browserUrl input[type="submit"] {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	width: 30;
+	height: 20px;
+}
+.browserContent {
+	height: 100%;
+	width: 100%;
+}
+.browserContent iframe{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#trashcan {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	height: 65px;
+	width: 65px;
+	background-image: url('/images/trashcan.png');
+	background-repeat: no-repeat;
+}
